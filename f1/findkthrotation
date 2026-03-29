@@ -1,0 +1,23 @@
+class Solution {
+  public:
+    int findKRotation(vector<int> &arr) {
+        // Code Here
+       int n=arr.size();
+       int st=0,ed=arr.size()-1;
+       int pivot=arr[0];
+       int idx=-1;
+       while(st<=ed){
+           int mid=(st+ed)/2;
+           if(arr[mid]>=pivot){
+               pivot=arr[mid];
+               idx=mid;
+               st=mid+1;
+           }
+           else{
+               ed=mid-1;
+           }
+           
+       }
+       return (idx+1)%n;
+    }
+};

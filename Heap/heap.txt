@@ -1,0 +1,13 @@
+1: when we are deleteing any element in heap means we are targeting the first element which the root one
+
+2: deleteing the root first replace the root by the last child present and then place it into the correct position.(This method is called heapify.)
+
+
+3: the tc of insertion and deletion in heap is  O(logn) 
+
+4:height of a tree is log(n)
+
+
+5:Agar k-smallest element bole to max_heap use karo and vice-versa(check img1,img2)
+
+
